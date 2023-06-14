@@ -32,7 +32,6 @@ disable404     = false
 [taxonomies]
   tag      = "tags"
   category = "categories"
-
 [params]
   title = 'Haroun'
   
