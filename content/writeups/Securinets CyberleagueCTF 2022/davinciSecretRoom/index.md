@@ -4,7 +4,7 @@ Title: "Davinci Secret Room"
 Date: 2022-05-23T12:00:00+01:00
 Platform: "Securinets CyberleagueCTF 2022"
 Type: "posts"
-Categories:
+series:
   - Cryptography
 tags:
   - CTF
