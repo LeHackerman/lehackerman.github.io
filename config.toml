@@ -1,0 +1,125 @@
+baseURL = "https://haroun.me"
+title   = "Haroun"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "native"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+
+[permalinks]
+  posts = "/:sections/:title/"
+
+[author]
+  name = "Haroun"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  title = 'Haroun'
+  
+  dateform        = "2 Jan 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "02-01-2006 15:04"
+  
+  description = 'This is a personal blog I use to share technical posts, CTF writeups and maybe some rants.'
+  
+  keywords = "blog, portfolio, cybersecurity, personal, malware analysis, threat intelligence, writeup, cryptography, reverse engineering, hardware hacking, binary exploitation"
+
+  images = ["/img/hackerman.jpg"]
+
+  homeSubtitle = "Knowledge seeker, hacker by nature."
+
+  disableReadOtherPosts = true
+  enableThemeToggle = true
+
+  enableSharingButtons = true
+
+  enableGlobalLanguageMenu = false	
+
+  customCSS=["/css/style.css"]
+
+  justifyContent = true
+  
+  [params.footer]
+    trademark = false
+    rss = false
+    copyright = false
+    author = false
+
+    topText = []
+    bottomText = [
+      "Theme made by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "[root@haroun.me ~]#"
+    logoHomeLink = "/"
+    logoCursorColor    = "#b70007"
+    logoCursorAnimate  = "1s"
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/LeHackerMan"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/LeHackerman"
+
+[languages]
+  [languages.en]
+  weight    = 1
+  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+  [[menu.main]]
+    identifier = "writeups"
+    name = "Writeups"
+    url = "writeups/"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 6
+

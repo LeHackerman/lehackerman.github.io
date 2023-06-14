@@ -1,0 +1,27 @@
+.posts-group{
+flex-direction:column;
+}
+.platform {
+      padding-top: 6px;
+      margin-right: 1.8em;
+      font-size: 1.6em;
+
+      @media #{$media-size-tablet} {
+        margin: -6px 0 4px;
+      }
+}
+.tocItem a{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 2px 0;
+        text-decoration: none;
+
+}
+figure img{
+	border-radius: 8px;
+}
+figcaption p{
+	font-style: italic;
+	text-align: center;
+}
