@@ -1,4 +1,4 @@
-baseURL = "https://haroun.me"
+baseURL = "https://haroun.tn"
 title   = "Haroun"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -77,7 +77,7 @@ disable404     = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "[root@haroun.me ~]#"
+    logoText     = "[root@haroun.tn ~]#"
     logoHomeLink = "/"
     logoCursorColor    = "#b70007"
     logoCursorAnimate  = "1s"
